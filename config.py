@@ -90,12 +90,12 @@ WEBIRC_MODE = None
 # OPTION: BASE_URL
 #         URL that this qwebirc instance will be available at, add the
 #         port number if your instance runs on a port other than 80.
-BASE_URL = "http://foo.foo.org/"
+BASE_URL = "http://events.cc.euirc.net/"
 
 # OPTION: NETWORK_NAME
 #         The name of your IRC network, displayed throughout the
 #         application.
-NETWORK_NAME = "FooNet"
+NETWORK_NAME = "euIRC.net"
 
 # OPTION: ANALYTICS_HTML
 #         If you have an analytics service, you can paste the HTML

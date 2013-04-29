@@ -12,9 +12,15 @@
 .qwebirc-centrebox table table {
   width: auto;
 }
+
 .qwebirc-loginbox .tr1 td {
   width: 100%;
   text-align: center;
+}
+
+.qwebirc-loginbox .tr1 td h1 {
+  padding-top: 0em;
+  margin-top: 0em;
 }
 
 .qwebirc-loginbox .tr2 td {
@@ -46,182 +52,143 @@
 }
 
 /**************** ABOUT PANE *******************/
-.qwebirc-aboutpane {
+
+.qwebirc-paneAbout {
   font-size: 1em !important;
-}
-
-.qwebirc-aboutpane .mainbody {
-  font-size: 0.8em;
   text-align: center;
-  padding: 5px;
 }
 
-.qwebirc-aboutpane table {
+.qwebirc-paneAbout p {
+  font-size: 0.8em;
+  margin: 0.5em 2em 0 2em;
+}
+
+.qwebirc-paneAbout table {
   display: inline-block;
 }
 
-.qwebirc-aboutpane div.header {
-  padding-top: 5px;
+.qwebirc-paneAbout ul {
+  text-align: left;
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.qwebirc-aboutpane .header {
-  background: white;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
+.qwebirc-paneAbout h1 {
+  font-weight: normal;
+  font-size: 2em;
+  padding: 0.2em 0 0 0;
+  margin: 0;
 }
 
-.qwebirc-aboutpane .header .title {
-  font-size: 3em;
-}
-
-.qwebirc-aboutpane .header .subtitle {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.qwebirc-aboutpane .skipmargin {
-  margin-top: 0px;
+.qwebirc-paneAbout h2 {
+  font-weight: normal;
+  font-size: 0.8em;
+  padding: 0 0 0.2em 0;
+  margin: 0;
 }
 
 /**************** EMBEDDED WIZARD *******************/
- div.qwebirc-embeddedwizard {
+ div.qwebirc-paneEmbed {
   padding-left: 5px;
   padding-top: 2px;
 }
 
-.qwebirc-embeddedwizard input.text {
+.qwebirc-paneEmbed input.text {
   width: 300px;
 }
 
-.qwebirc-embeddedwizard input.iframetext {
+.qwebirc-paneEmbed input.iframetext {
   width: 95%;
 }
 
-.qwebirc-embeddedwizard div.wizardcontrols {
+.qwebirc-paneEmbed div.wizardcontrols {
 }
 
-.qwebirc-embeddedwizard .wizardcontrols input {
+.qwebirc-paneEmbed .wizardcontrols input {
   width: 70px;
 }
 
 /**************** PRIVACY POLICY PANE *******************/
-.qwebirc-privacypolicypane {
+
+.qwebirc-panePrivacyPolicy {
   font-size: 1em !important;
+  text-align: center;
 }
 
-.qwebirc-privacypolicypane .mainbody {
+.qwebirc-panePrivacyPolicy p {
   font-size: 0.8em;
-  text-align: center;
-  padding: 5px;
+  margin: 0 2em;
 }
 
-.qwebirc-privacypolicypane table {
-  display: inline-block;
+.qwebirc-panePrivacyPolicy h1 {
+  font-weight: normal;
+  font-size: 2em;
+  padding: 0.2em 0;
+  margin: 0 0 0.5em 0;
 }
 
-.qwebirc-privacypolicypane div.header {
-  padding-top: 5px;
+.qwebirc-panePrivacyPolicy h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.1em 0;
 }
 
-.qwebirc-privacypolicypane .header {
-  background: white;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
-}
-
-.qwebirc-privacypolicypane .header .title {
-  font-size: 3em;
-}
-
-.qwebirc-privacypolicypane .header .subtitle {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.qwebirc-privacypolicypane .monospace {
+.qwebirc-panePrivacyPolicy .monospace {
   font-family: Consolas, "Lucida Console", monospace;
 }
 
 /****** FEEDBACK ***********/
-.qwebirc-feedbackpane {
+
+.qwebirc-paneFeedback {
   font-size: 1em !important;
+  text-align: center;
 }
 
-.qwebirc-feedbackpane .mainbody {
+.qwebirc-paneFeedback .enterarea {
   font-size: 0.8em;
-  text-align: center;
-  padding: 5px;
+  margin: 0 2em;
 }
 
-.qwebirc-feedbackpane table {
-  display: inline-block;
+.qwebirc-paneFeedback h1 {
+  font-weight: normal;
+  font-size: 2em;
+  padding: 0.2em 0;
+  margin: 0 0 0.5em 0;
 }
 
-.qwebirc-feedbackpane div.header {
-  padding-top: 5px;
-}
-
-.qwebirc-feedbackpane .header {
-  background: white;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
-}
-
-.qwebirc-feedbackpane .header .title {
-  font-size: 3em;
-}
-
-.qwebirc-feedbackpane .header .subtitle {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.qwebirc-feedbackpane .monospace {
+.qwebirc-paneFeedback .monospace {
   font-family: Consolas, "Lucida Console", monospace;
 }
 
 /************* FAQ *****************/
 
-.qwebirc-faqpane {
+.qwebirc-paneFAQ {
   font-size: 1em !important;
+  text-align: center;
 }
 
-.qwebirc-faqpane .mainbody {
+.qwebirc-paneFAQ p {
   font-size: 0.8em;
-  text-align: center;
-  padding: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 2em;
 }
 
-.qwebirc-faqpane table {
-  display: inline-block;
+.qwebirc-paneFAQ h1 {
+  font-weight: normal;
+  font-size: 2em;
+  padding: 0.2em 0;
+  margin: 0 0 0.5em 0;
 }
 
-.qwebirc-faqpane div.header {
-  padding-top: 5px;
+.qwebirc-paneFAQ h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.1em 0;
 }
 
-.qwebirc-faqpane .header {
-  background: white;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
-}
-
-.qwebirc-faqpane .header .title {
-  font-size: 3em;
-}
-
-.qwebirc-faqpane .header .subtitle {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.qwebirc-faqpane .monospace {
+.qwebirc-paneFAQ .monospace {
   font-family: Consolas, "Lucida Console", monospace;
 }
 
@@ -233,14 +200,32 @@
 
 /************* OPTIONS *****************/
 
-.qwebirc-optionspane div.hue-slider {
+.qwebirc-paneOptions div.hue-slider {
+  margin-top: 5px;
   border: 0px solid black;
   width: 360px;
   height: 8px;
   background-image: url(../images/hue.png);
 }
 
-.qwebirc-optionspane div.hue-slider .knob {
+.qwebirc-paneOptions div.sat-slider {
+  margin-top: 5px;
+  border: 0px solid black;
+  width: 360px;
+  height: 8px;
+  background-image: url(../images/saturation.png);
+}
+
+.qwebirc-paneOptions div.light-slider {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border: 0px solid black;
+  width: 360px;
+  height: 8px;
+  background-image: url(../images/lightness.png);
+}
+
+.qwebirc-paneOptions div .knob {
   width: 8px;
   height: 16px;
   top: -5px;
@@ -249,3 +234,176 @@
   border: 1px solid black;
 }
 
+.qwebirc-paneOptions .hexform {
+  display: inline;
+  margin-right: 3px;
+}
+
+/************* LIST *****************/
+
+.qwebirc-paneList table {
+  width: 100%;
+}
+
+.qwebirc-paneList .viewchange {
+  width: 15em;
+}
+
+.qwebirc-paneList .hoverhint {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.qwebirc-paneList .filterbox {
+  padding: 0.3em;
+  text-align: center;
+}
+
+.qwebirc-paneList .filterbox .inputbox {
+  padding: 0 0.3em;
+}
+
+.qwebirc-paneList .pagebox {
+  padding: 0.3em;
+  text-align: center;
+}
+
+.qwebirc-paneList .listbox {
+  width: 100%;
+  clear: both;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+.qwebirc-paneList .listbox .name {
+  width: 11em;
+}
+
+.qwebirc-paneList .listbox .users {
+  text-align: center;
+  width: 4em;
+}
+
+.qwebirc-paneList .listbox th {
+  padding: 0.3em;
+  text-align: center;
+  font-weight: bold;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+}
+
+.qwebirc-paneList .listbox th.chantopic {
+  border-width: 1px 0 1px 0;
+}
+
+.qwebirc-paneList .listbox td {
+  padding: 0.3em;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+}
+
+.qwebirc-paneList .listbox td.loading {
+  padding: 0.3em;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+.qwebirc-paneList .listbox td.chantopic {
+  border-width: 0;
+}
+
+.qwebirc-paneList .listbox tr:hover td.chan1 {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.qwebirc-paneList .listbox tr:hover td.chan2 {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.qwebirc-paneList .listbox tr:hover td.name {
+  text-decoration: underline;
+}
+
+.qwebirc-paneList .tagbox {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0.5em 1.5em 0 1.5em;
+  text-align: justify;
+}
+
+.qwebirc-paneList .tagbox span {
+  margin: 0 0.15em;
+}
+
+.qwebirc-paneList .tagbox span:hover {
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: underline;
+}
+
+
+/** euIRCnet Overrides **/
+a:link {
+    color: #E8D032;
+}
+.qwebirc-centrebox {
+    background-color: #19456E;
+    color: white;
+}
+.qwebirc-centrebox table {
+    margin: auto;
+    width: 780px;
+}
+.qwebirc-loginbox {
+    background-color: #2A6295;
+    border: 1px solid white;
+}
+.qwebirc-loginbox .tr1 td {
+    background-image: url("../images/header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+    height: 144px;
+    text-align: center;
+}
+.qwebirc-loginbox .tr1 td h1 {
+    display: none;
+}
+
+.qwebirc-qui .dynamicpanel {
+    background-color: #346EA5 !important;
+    color: white !important;
+}
+
+.qwebirc-qui .tab {
+    background: none repeat scroll 0 0 #19456E !important;
+    color: #C8D2DC !important;
+    border-radius: 1px 1px 1px 1px; !important;
+    border-color:#C8D2DC !important;
+}
+
+.qwebirc-qui .tab-selected {
+    background: none repeat scroll 0 0 #19456E !important;
+    border: 1px solid #E8D032 !important;
+    color: #E8D032 !important;
+}
+
+.qwebirc-qui .nicklist a {
+    border-bottom: 1px solid transparent !important;
+    border-top: 1px solid transparent !important;
+}
+.qwebirc-qui .dropdownmenu {
+  background: none repeat scroll 0 0 #346EA5 !important;
+  border: 1px solid #E8D032 !important;
+  border-top: 0px solid transparent !important;
+}
+.qwebirc-qui hr.lastpos, .qwebirc-qui .topic, .qwebirc-qui .nicklist, .qwebirc-qui .outertabbar, .qwebirc-qui div.input {
+  border-color:#E8D032 !important;
+}
+
+input:not([type]), input[type="text"], input[type="password"] {
+  border:1px solid white !important;
+}
