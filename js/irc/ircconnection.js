@@ -47,12 +47,12 @@ qwebirc.irc.IRCConnection = new Class({
   },
   send: function(data, synchronous) {
     data = data.replace("\r","").replace("\n","");
-    console.log(">: "+data);
+    ////console.log(">: "+data);
     var hex = '';
     for(var i=0;i<data.length;i++) {
         hex += ''+data.charCodeAt(i).toString(16);
     }
-    console.log("H>:"+hex);
+    //console.log("H>:"+hex);
     this.ws.send(data);
     return true;
   },
@@ -77,7 +77,7 @@ qwebirc.irc.IRCConnection = new Class({
       var lines = e.data.split("\n");
       for( var k=0; k<lines.length-1; k++ ) {
 	lines[k] = lines[k].replace("\r", "");
-	console.log("<: "+lines[k]);
+	//console.log("<: "+lines[k]);
 	var msg = ["c", "", "irc.rbx.fr.euirc.net"]; //FIXME
         if(lines[k].charAt(0) == ':') {
           msg[2] = lines[k].split(" ", 1)[0].substring(1);
@@ -98,7 +98,7 @@ qwebirc.irc.IRCConnection = new Class({
 			break;
 		lines[k] = lines[k].substring(lines[k].indexOf(" ")+1);
 	}
-	console.log("i:"+i);
+	//console.log("i:"+i);
 	msg[3] = token;
 	this.fireEvent("recv", [msg]);
       }	

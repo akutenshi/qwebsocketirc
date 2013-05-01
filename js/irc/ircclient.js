@@ -22,7 +22,6 @@ qwebirc.irc.IRCClient = new Class({
     
     this.inviteChanList = [];
     this.activeTimers = {};
-    
     this.loginRegex = new RegExp(this.ui.options.loginRegex);
     this.tracker = new qwebirc.irc.IRCTracker(this);
   },

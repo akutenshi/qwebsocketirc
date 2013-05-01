@@ -65,7 +65,6 @@ qwebirc.ui.BaseUI = new Class({
       w.addLine("", "If your browser shows an error or don't autoconnect to chat during the next 20sec,");
       w.addLine("", "please use the following link: http://iris.cc.euirc.net");
       w.addLine("", "");
-	console.log(w);
     }
     return w;
   },
