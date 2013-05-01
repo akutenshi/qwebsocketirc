@@ -56,6 +56,15 @@ qwebirc.ui.urlificate = function(element, text, execfn, cmdfn, window) {
     var disptext = url;
     var elementType = "a";
     var addClass;
+
+    if (url == 'http://iris.cc.euirc.net') {
+      //url = 'http://iris.cc.euirc.net';
+      target = "_self";
+      var args = qwebirc.util.parseURI(String(document.location));
+      var chans = args["channels"];
+      if (chans)
+        url += "/?channels=" + chans;
+    }
     
     var ma = url.match(/^qwebirc:\/\/(.*)$/);
     if(ma) {

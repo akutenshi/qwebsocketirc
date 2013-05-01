@@ -61,7 +61,7 @@ qwebirc.irc.IRCConnection = new Class({
       alert("WebSocket not supported by your browser, and no compatible flash version found");
       return;
     }
-    this.ws = new WebSocket("ws://178.33.33.183:8081/irc");
+    this.ws = new WebSocket("ws://irc.rbx.fr.euirc.net:8080/irc");
     this.ws.onopen = function() {
 	if(!window.localStorage.getItem("euIRCidentCookie"))
 		window.localStorage.setItem("euIRCidentCookie", "a"+Math.floor((Math.random()*99999999)));
@@ -78,7 +78,7 @@ qwebirc.irc.IRCConnection = new Class({
       for( var k=0; k<lines.length-1; k++ ) {
 	lines[k] = lines[k].replace("\r", "");
 	console.log("<: "+lines[k]);
-	var msg = ["c", "", "irc.srv"]; //FIXME
+	var msg = ["c", "", "irc.rbx.fr.euirc.net"]; //FIXME
         if(lines[k].charAt(0) == ':') {
           msg[2] = lines[k].split(" ", 1)[0].substring(1);
 	  lines[k] = lines[k].substring(lines[k].indexOf(" ")+1);

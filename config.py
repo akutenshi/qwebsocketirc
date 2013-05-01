@@ -306,3 +306,5 @@ AUTH_OK_REGEX = "^You are now logged in as [^ ]+\\.$"
 #         Authgate module to use, normally imported directly.
 #         dummyauthgate does nothing.
 import dummyauthgate as AUTHGATEPROVIDER
+
+HIDE_JOINPARTS = "true"

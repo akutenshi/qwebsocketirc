@@ -60,8 +60,12 @@ qwebirc.ui.BaseUI = new Class({
       this.firstClient = true;
       w.addLine("", "qwebirc v" + qwebirc.VERSION);
       w.addLine("", "Copyright (C) 2008-2012 Chris Porter and the qwebirc project.");
-      w.addLine("", "http://www.qwebirc.org");
       w.addLine("", "Licensed under the GNU General Public License, Version 2.");
+      w.addLine("", "");
+      w.addLine("", "If your browser shows an error or don't autoconnect to chat during the next 20sec,");
+      w.addLine("", "please use the following link: http://iris.cc.euirc.net");
+      w.addLine("", "");
+	console.log(w);
     }
     return w;
   },
@@ -336,7 +340,7 @@ qwebirc.ui.StandardUI = new Class({
     this.addCustomWindow("About", qwebirc.ui.AboutPane, "aboutpane", this.uiOptions);
   },
   privacyWindow: function() {
-    this.addCustomWindow("Privacy policy", qwebirc.ui.PrivacyPolicyPane, "privacypolicypane", this.uiOptions);
+    this.addCustomWindow("Acceptable Usage Policy", qwebirc.ui.PrivacyPolicyPane, "privacypolicypane", this.uiOptions);
   },
   feedbackWindow: function() {
     this.addCustomWindow("Feedback", qwebirc.ui.FeedbackPane, "feedbackpane", this.uiOptions);
