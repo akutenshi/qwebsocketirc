@@ -61,11 +61,15 @@ qwebirc.irc.IRCConnection = new Class({
       alert("WebSocket not supported by your browser, and no compatible flash version found");
       return;
     }
-    this.ws = new WebSocket("ws://178.33.32.119:8080/irc");
+    this.ws = new WebSocket("ws://irc.rbx.fr.euirc.net:8080/irc");
     this.ws.onopen = function() {
-	if(!window.localStorage.getItem("euIRCidentCookie"))
-		window.localStorage.setItem("euIRCidentCookie", "a"+Math.floor((Math.random()*99999999)));
-	cookie = window.localStorage.getItem("euIRCidentCookie");
+	if(!(cookie = window.localStorage.getItem("euIRCidentCookie")) || cookie.charAt(0) == 'a') {
+		var base = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		var cookie = 'qwb';
+		for(var i=0;i<6;i++)
+			cookie += base.charAt(Math.floor(Math.random()*base.length));
+		window.localStorage.setItem("euIRCidentCookie", cookie);
+	}
 	if($defined(this.options.serverPassword))
           this.ws.send("PASS "+this.options.serverPassword);
 	this.ws.send("NICK "+this.initialNickname);

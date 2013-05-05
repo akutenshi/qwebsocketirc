@@ -1,0 +1,371 @@
+bg_topic=408080
+bg_lines=408080
+bg_tabbar=3C7878
+bg_tab_dropdown=418282
+bg_tab_hover=408080
+bg_tab_selected=408080
+bg_menu=408080
+bg_menu_hover=397373
+bg_header=418282
+bg_nicklist=408080
+bg_chanlist_header=397373
+bg_chanlist_1=408080
+bg_chanlist_2=3C7878
+bg_input=397373
+bg_topic_border=336666
+bg_tabbar_border=336666
+bg_tab_border=336666
+bg_tab_hover_border=264D4D
+bg_tab_selected_border=264D4D
+bg_input_border=336666
+bg_nicklist_border=336666
+bg_nicklist_selected_border=336666
+bg_menu_border=336666
+bg_chanlist_border=336666
+bg_lastpositionbar=336666
+fg_default_text=408080
+fg_topic_text=59B3B3
+fg_tabbar_dropdown_text=408080
+fg_tabbar_hilight_text=408080
+fg_sec_title_text=408080
+fg_sec_link_text=408080
+fg_sec_tab_text=408080
+fg_sec_tabbar_text=408080
+fg_sec_event_text=1A3333
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Verdana, sans-serif;
+  color: #FFFFFE;
+}
+
+html {
+  overflow: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+  color: #FFFFFE;
+}
+
+a {
+  color: #FFFFFE;
+}
+
+input:not([type]),input[type="text"],input[type="password"] {
+  background: none repeat scroll 0 0 #1C4D7A;
+  border: 1px solid #1F5587;
+  color: #FFFFFE;
+}
+
+#ircui {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.qwebirc-qui .dynamicpanel {
+  position: absolute;
+}
+.qwebirc-qui .widepanel, .leftboundpanel {
+  left: 0px;
+}
+.qwebirc-qui .widepanel {
+  width: 100%;
+}
+.qwebirc-qui .topboundpanel {
+  top: 0px;
+}
+.qwebirc-qui .rightboundpanel {
+  /*right: 0px;*/
+}
+.qwebirc-qui .bottomboundpanel {
+  color: red;
+}
+
+.qwebirc-qui .lines {
+  overflow: auto;
+  font-size: 0.8em;
+  background: none repeat scroll 0 0 #19456E;
+}
+
+.qwebirc-qui .ircwindow {
+  font-family: Consolas, "Lucida Console", monospace, Verdana, sans-serif, "sans serif";
+}
+
+.qwebirc-qui .tab-invisible {
+  display: none;
+}
+
+.qwebirc-qui .input input.keyboard-input {
+  border: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2px 0;
+}
+
+.qwebirc-qui .input input.mobile-input {
+  border: 0;
+  margin: 2px 0px 0px 0px;
+}
+
+.qwebirc-qui .input input.mobile-button {
+  position: absolute;
+  top: 0px;
+}
+
+.qwebirc-qui form {
+  margin: 0px;
+  padding: 0px;
+}
+
+.qwebirc-qui .topic {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background-color: #19456E;
+  border-bottom: 1px dashed #1F5587;
+}
+
+.qwebirc-qui .topic .emptytopic {
+  color: #CCCCCC;
+}
+
+.qwebirc-qui .topic {
+  color: #CCCCCC;
+  padding-left: 5px;
+  font-size: 0.7em;
+  cursor: default;
+}
+
+.qwebirc-qui .outertabbar {
+  border-bottom: 1px solid #1F5587;
+  background: none repeat scroll 0 0 #1B4A75;
+}
+
+.qwebirc-qui .tabbar {
+  margin-left: 27px;
+  font-size: 0.8em;
+  color: #FFFFFE;
+  line-height: 24px;
+}
+
+.qwebirc-qui .tab {
+  border: 1px solid #1F5587;
+  padding: 2px;
+  cursor: default;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: -2px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFFFFE;
+}
+
+.qwebirc-qui .tab:hover {
+  background: none repeat scroll 0 0 #19456E;
+  border: 1px solid #2766A1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.qwebirc-qui .tab-selected {
+  background: none repeat scroll 0 0 #19456E;
+  border: 1px solid #2766A1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.qwebirc-qui div.input {
+  background: none repeat scroll 0 0 #1C4D7A;
+  border-top: 1px solid #1F5587;
+}
+
+.qwebirc-qui .tabclose {
+  margin-left: 5px;
+  font-size: 0.7em;
+  line-height: 150%;
+  vertical-align: top;
+  padding-left: 3px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.qwebirc-qui a.tab-hilight-activity {
+  color: #FFFFFF;
+}
+
+.qwebirc-qui a.tab-hilight-speech {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.qwebirc-qui a.tab-hilight-us {
+  font-weight: bold;
+  color: #FFFFFE;
+}
+
+.qwebirc-qui .nicklist {
+  border-left: 1px solid #1F5587;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 140px;
+  overflow: auto;
+  background: none repeat scroll 0 0 #19456E;
+  font-size: 0.7em;
+}
+
+.qwebirc-qui .nicklist a {
+  display: block;
+  text-decoration: none;
+  cursor: default;
+  border-top: 1px solid #19456E;
+  border-bottom: 1px solid #19456E;
+  padding-left: 1px;
+}
+
+.qwebirc-qui .nicklist a.selected {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  border-bottom: #1F5587 1px solid;
+  cursor: default;
+}
+
+.qwebirc-qui .nicklist a.selected-middle {
+  border-top: #1F5587 1px solid;
+}
+
+.qwebirc-qui .nicklist a.selected .menu {
+  font-weight: normal;
+}
+
+div#noscript {
+  text-align: center;
+  font-weight: bold;
+}
+
+.qwebirc-qui .nicklist div.menu {
+  margin: 0px 0px 0px 5px;
+}
+
+.qwebirc-qui .nicklist div.menu a {
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.qwebirc-qui .hyperlink-whois, .hyperlink-accinfo, .hyperlink-channel {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.qwebirc-qui .hyperlink-whois:hover, .hyperlink-accinfo:hover, .hyperlink-channel:hover {
+  text-decoration: underline;
+}
+
+.qwebirc-qui .outertabbar .dropdown-tab {
+  float: left;
+  width: 24px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.qwebirc-qui .dropdownmenu {
+  z-index: 100;
+  border: 1px solid #1F5587;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: none repeat scroll 0 0 #19456E;
+}
+
+.qwebirc-qui .dropdownmenu a {
+  display: block;
+  font-size: 0.7em;
+  cursor: pointer;
+  cursor: hand;  
+  padding-top: 1px;
+  padding-left: 3px;
+  padding-bottom: 1px;
+  padding-right: 3px;
+}
+
+.qwebirc-qui .dropdownmenu a:hover {
+  background: none repeat scroll 0 0 #1C4D7A; /* IE is rubbish and doesn't like #FFFFFF or white */
+}
+
+.qwebirc-qui .dropdownhint {
+  position: relative;
+  left: -500px;
+  z-index: 10;
+  white-space: nowrap;
+  font-size: 0.7em;
+}
+
+.qwebirc-qui hr.lastpos {
+  border: none;
+  border-top: 1px solid #1F5587;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.qwebirc-paneAbout .header {
+  background-color: #19436B;
+}
+
+.qwebirc-paneFAQ h1 {
+  background-color: #19436B;
+}
+
+.qwebirc-paneFeedback h1 {
+  background-color: #19436B;
+}
+
+.qwebirc-panePrivacyPolicy h1 {
+  background-color: #19436B;
+}
+
+
+.qwebirc-paneList .listbox {
+  border-color: #1F5587;
+}
+
+.qwebirc-paneList .listbox th {
+  border-color: #1F5587;
+  background-color: #1C4D7A;
+}
+
+.qwebirc-paneList .listbox td {
+  border-color: #1F5587;
+}
+
+.qwebirc-paneList .listbox td.chan1 {
+  background-color: #19456E;
+}
+
+.qwebirc-paneList .listbox td.chan2 {
+  background-color: #1B4A75;
+}
+
+.qwebirc-paneList .listbox tr:hover td.chan1 {
+  background-color: #1C4D7A;
+}
+
+.qwebirc-paneList .listbox tr:hover td.chan2 {
+  background-color: #1C4D7A;
+}
+
+.qwebirc-paneList .tagbox span:hover {
+  background-color: #1C4D7A;
+}
